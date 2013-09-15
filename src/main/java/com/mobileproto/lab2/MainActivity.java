@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 
         List<String> files = new ArrayList<String>(Arrays.asList(fileList()));
 
-        final ArrayAdapter<String> aa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, files);
+        final NoteListAdapter aa = new NoteListAdapter(this, android.R.layout.simple_list_item_1, files);
 
         final ListView notes = (ListView) findViewById(R.id.noteList);
 
@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
                         fos.close();
                         title.setText("");
                         note.setText("");
-                        aa.insert(fileName, 0);
+                        aa.insert(fileName,0);
                         aa.notifyDataSetChanged();
                     }catch (IOException e){
                         Log.e("IOException", e.getMessage());
