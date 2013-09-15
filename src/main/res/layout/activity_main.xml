@@ -11,6 +11,51 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/title_field"
+        android:id="@+id/titleText"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignBaseline="@+id/titleField"
+        android:layout_alignBottom="@+id/titleField"
+        android:layout_alignLeft="@+id/noteField" />
+
+    <EditText
+        android:layout_width="164dp"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleField"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/titleText"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:maxLines="8"
+        android:gravity="top"
+        android:background="@color/grey"
+        android:ems="10"
+        android:id="@+id/noteField"
+        android:layout_below="@+id/titleField"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/saveButton"
+        android:layout_below="@+id/noteField"
+        android:layout_alignLeft="@+id/noteField"
+        android:layout_alignRight="@+id/noteField" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noteList"
+        android:layout_below="@+id/saveButton"
+        android:layout_alignLeft="@+id/saveButton" />
+
 
 </RelativeLayout>
