@@ -8,7 +8,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -40,16 +39,7 @@ public class MainActivity extends Activity {
 
         notes.setAdapter(aa);
 
-        notes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                TextView title = (TextView) view.findViewById(R.id.textView);
-                String fileName = title.getText().toString();
-                Intent in = new Intent(getApplicationContext(), NoteDetailActivity.class);
-                in.putExtra("file", fileName);
-                startActivity(in);
-            }
-        });
+
 
         Button save = (Button)findViewById(R.id.saveButton);
 
@@ -74,6 +64,18 @@ public class MainActivity extends Activity {
             }
         });
 
+        save.setFocusable(false);
+
+        notes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                final TextView title = (TextView) view.findViewById(R.id.titleTextView);
+                String fileName = title.getText().toString();
+                Intent in = new Intent(getApplicationContext(), NoteDetailActivity.class);
+                in.putExtra("file", fileName);
+                startActivity(in);
+            }
+        });
 
     }
 

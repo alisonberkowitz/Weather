@@ -2,18 +2,13 @@ package com.mobileproto.lab2;
 
 import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -39,7 +34,7 @@ public class NoteListAdapter extends ArrayAdapter {
         }
 
         ImageButton del = (ImageButton) v.findViewById(R.id.deleteButton);
-        final TextView name = (TextView) v.findViewById(R.id.textView);
+        final TextView name = (TextView) v.findViewById(R.id.titleTextView);
         name.setText(data.get(position));
 
         del.setOnClickListener(new View.OnClickListener() {
