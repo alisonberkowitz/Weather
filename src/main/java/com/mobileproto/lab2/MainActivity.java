@@ -1,7 +1,9 @@
 package com.mobileproto.lab2;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
@@ -20,10 +22,14 @@ import java.util.List;
 
 public class MainActivity extends Activity {
 
+    public NotesDbHelper mDbHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mDbHelper = new NotesDbHelper(this);
 
         final TextView title = (TextView) findViewById(R.id.titleField);
 
@@ -40,7 +46,6 @@ public class MainActivity extends Activity {
         notes.setAdapter(aa);
 
 
-
         Button save = (Button)findViewById(R.id.saveButton);
 
         save.setOnClickListener(new View.OnClickListener() {
@@ -49,17 +54,38 @@ public class MainActivity extends Activity {
                 String fileName = title.getText().toString();
                 String noteText = note.getText().toString();
                 if (fileName != null && noteText != null){
-                    try{
+                    /*try{
                         FileOutputStream fos = openFileOutput(fileName, Context.MODE_PRIVATE);
                         fos.write(noteText.getBytes());
                         fos.close();
                         title.setText("");
                         note.setText("");
                         aa.insert(fileName,0);
-                        aa.notifyDataSetChanged();
-                    }catch (IOException e){
-                        Log.e("IOException", e.getMessage());
-                    }
+                        aa.notifyDataSetChanged();*/
+
+                        // Gets the data repository in write mode
+                        SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
+// Create a new map of values, where column names are the keys
+                        ContentValues values = new ContentValues();
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_TITLE, fileName);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_TEXT, noteText);
+
+// Insert the new row, returning the primary key value of the new row
+                        long newRowId;
+                        newRowId = db.insert(
+                                NotesDbHelper.FeedEntry.TABLE_NAME,
+                                null,
+                                values);
+
+                    title.setText("");
+                    note.setText("");
+                    aa.insert(fileName,0);
+                    aa.notifyDataSetChanged();
+
+/*                    }catch (IOException e){
+                        Log.e("IOException", e.getMessage());*/
+
                 }
             }
         });
@@ -74,9 +100,10 @@ public class MainActivity extends Activity {
                 Intent in = new Intent(getApplicationContext(), NoteDetailActivity.class);
                 in.putExtra("file", fileName);
                 startActivity(in);
-            }
-        });
 
+            }
+
+        });
     }
 
 
@@ -86,5 +113,5 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-    
+
 }

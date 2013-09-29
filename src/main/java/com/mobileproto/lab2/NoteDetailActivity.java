@@ -29,6 +29,8 @@ public class NoteDetailActivity extends Activity {
         TextView noteText = (TextView) findViewById(R.id.noteText);
 
         title.setText(fileName);
+
+        //replace this with database stuff. when you click on a note that you already made
         StringBuilder fileText = new StringBuilder();
         try{
             FileInputStream fis = openFileInput(fileName);

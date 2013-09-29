@@ -2,6 +2,7 @@ package com.mobileproto.lab2;
 
 import android.app.Activity;
 import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,12 +18,12 @@ import java.util.List;
 public class NoteListAdapter extends ArrayAdapter {
 
     private List<String> data;
-    private Activity activity;
+    private MainActivity activity;
 
     public NoteListAdapter(Activity a, int viewResourceId, List<String> data){
         super(a, viewResourceId, data);
         this.data = data;
-        this.activity = a;
+        this.activity = (MainActivity)a;
     }
 
     @Override
@@ -40,6 +41,16 @@ public class NoteListAdapter extends ArrayAdapter {
         del.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                // Define 'where' part of query.
+                String selection = NotesDbHelper.FeedEntry.COLUMN_NAME_ENTRY_ID + " LIKE ?";
+// Specify arguments in placeholder order.
+                String[] selectionArgs = { String.valueOf(NotesDbHelper.FeedEntry._ID) };
+                // Gets the data repository in write mode
+                SQLiteDatabase db = activity.mDbHelper.getWritableDatabase();
+// Issue SQL statement.
+                db.delete(NotesDbHelper.FeedEntry.TABLE_NAME, selection, selectionArgs);
+
                 String fileName = name.getText().toString();
                 activity.deleteFile(fileName);
                 data.remove(position);
