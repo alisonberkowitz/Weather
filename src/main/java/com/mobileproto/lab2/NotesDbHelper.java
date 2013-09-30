@@ -25,7 +25,8 @@ public class NotesDbHelper extends SQLiteOpenHelper {
             "CREATE TABLE " + FeedEntry.TABLE_NAME + " (" +
                     FeedEntry._ID + " INTEGER PRIMARY KEY," +
                     FeedEntry.COLUMN_NAME_ENTRY_ID + TEXT_TYPE + COMMA_SEP +
-                    FeedEntry.COLUMN_NAME_TITLE + TEXT_TYPE + " )";
+                    FeedEntry.COLUMN_NAME_TITLE + TEXT_TYPE + COMMA_SEP +
+                    FeedEntry.COLUMN_NAME_TEXT + TEXT_TYPE + " )";
 
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + FeedEntry.TABLE_NAME;

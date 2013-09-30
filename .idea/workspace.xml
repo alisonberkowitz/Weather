@@ -21,6 +21,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -57,7 +58,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -67,14 +67,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="NoteListAdapter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="NoteListAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteListAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="42" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.75831485" vertical-offset="198" max-vertical-offset="885">
-              <folding>
-                <element signature="e#1264#2117#0" expanded="true" />
-                <element signature="e#2106#2107#0" expanded="true" />
-              </folding>
+            <state line="47" column="36" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0" vertical-offset="389" max-vertical-offset="840">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,7 +79,7 @@
       <file leaf-file-name="NotesDbHelper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NotesDbHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="82" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="855">
+            <state line="17" column="58" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
@@ -91,16 +88,16 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1845">
+            <state line="25" column="0" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="1019" max-vertical-offset="1470">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NoteDetailActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="NoteDetailActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="735">
+            <state line="23" column="13" selection-start="553" selection-end="553" vertical-scroll-proportion="0.36585367" vertical-offset="0" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
@@ -116,7 +113,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NotesDbHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteListAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteDetailActivity.java" />
       </list>
     </option>
   </component>
@@ -152,8 +151,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -192,6 +189,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,6 +314,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="bd023214-b1a9-445a-9bb2-5966df80edea" name="Default" comment="" />
@@ -345,26 +349,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1527" height="869" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.500339" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24949153" sideWeight="0.28591353" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32914925" sideWeight="0.49966103" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.49966103" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24949153" sideWeight="0.67085075" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32914925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -434,13 +438,59 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NotesDbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="82" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="12" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="36" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NotesDbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="82" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="12" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="40" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1035">
-          <folding>
-            <element signature="e#1264#2117#0" expanded="true" />
-            <element signature="e#2106#2107#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -468,41 +518,35 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="58" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="885">
-          <folding>
-            <element signature="e#1264#2117#0" expanded="true" />
-            <element signature="e#2106#2107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NotesDbHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="82" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1470">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="23" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="42" selection-start="1545" selection-end="1545" vertical-scroll-proportion="0.75831485" vertical-offset="198" max-vertical-offset="885">
-          <folding>
-            <element signature="e#1264#2117#0" expanded="true" />
-            <element signature="e#2106#2107#0" expanded="true" />
-          </folding>
+        <state line="47" column="36" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NotesDbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="58" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="553" selection-end="553" vertical-scroll-proportion="0.36585367" vertical-offset="0" max-vertical-offset="960">
+          <folding />
         </state>
       </provider>
     </entry>
