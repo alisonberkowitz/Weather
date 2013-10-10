@@ -11,52 +11,74 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title_field"
-        android:id="@+id/titleText"
+        android:text="@string/notify_field"
+        android:id="@+id/notifyText"
         android:textAppearance="?android:textAppearanceMedium"
-        android:layout_alignBaseline="@+id/titleField"
-        android:layout_alignBottom="@+id/titleField"
-        android:layout_alignLeft="@+id/noteField" />
+        android:layout_alignBaseline="@+id/notifyField"
+        android:layout_alignBottom="@+id/notifyField" />
 
     <EditText
         android:layout_width="164dp"
         android:inputType="text"
         android:layout_height="wrap_content"
-        android:id="@+id/titleField"
+        android:background="@color/grey"
+        android:id="@+id/notifyField"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/titleText"
+        android:layout_toRightOf="@+id/notifyText"
         android:layout_marginTop="12dp" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:lines="8"
-        android:maxLines="8"
-        android:gravity="top"
+        android:text="@string/outside_text"
+        android:id="@+id/outsideText"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_below="@+id/notifyField"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_field"
+        android:id="@+id/startText"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignLeft="@+id/notifyText"
+        android:layout_below="@+id/outsideText"/>
+
+    <EditText
+        android:layout_width="164dp"
+        android:inputType="text"
+        android:layout_height="wrap_content"
         android:background="@color/grey"
-        android:ems="10"
-        android:id="@+id/noteField"
-        android:layout_below="@+id/titleField"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:padding="8dp" />
+        android:id="@+id/startField"
+        android:layout_toRightOf="@+id/startText"
+        android:layout_below="@+id/outsideText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_field"
+        android:id="@+id/endText"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignLeft="@+id/startText"
+        android:layout_below="@+id/startField"/>
+
+    <EditText
+        android:layout_width="164dp"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:id="@+id/endField"
+        android:layout_toRightOf="@+id/endText"
+        android:layout_below="@+id/startText" />
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/save"
         android:id="@+id/saveButton"
-        android:layout_below="@+id/noteField"
-        android:layout_alignLeft="@+id/noteField"
-        android:layout_alignRight="@+id/noteField" />
-
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/noteList"
-        android:layout_below="@+id/saveButton"
-        android:layout_alignLeft="@+id/saveButton" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
 
 </RelativeLayout>

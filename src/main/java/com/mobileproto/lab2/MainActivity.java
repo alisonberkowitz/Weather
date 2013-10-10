@@ -31,19 +31,20 @@ public class MainActivity extends Activity {
 
         mDbHelper = new NotesDbHelper(this);
 
-        final TextView title = (TextView) findViewById(R.id.titleField);
+        final TextView notify = (TextView) findViewById(R.id.notifyField);
 
+        final TextView start = (TextView) findViewById((R.id.startField));
 
-        final TextView note = (TextView) findViewById(R.id.noteField);
+        final TextView end = (TextView) findViewById(R.id.endField);
 
 
         List<String> files = new ArrayList<String>(Arrays.asList(fileList()));
 
         final NoteListAdapter aa = new NoteListAdapter(this, android.R.layout.simple_list_item_1, files);
 
-        final ListView notes = (ListView) findViewById(R.id.noteList);
+        //final ListView notes = (ListView) findViewById(R.id.noteList);
 
-        notes.setAdapter(aa);
+        //notes.setAdapter(aa);
 
 
         Button save = (Button)findViewById(R.id.saveButton);
@@ -51,9 +52,10 @@ public class MainActivity extends Activity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String fileName = title.getText().toString();
-                String noteText = note.getText().toString();
-                if (fileName != null && noteText != null){
+                Integer notifyTime = Integer.parseInt(notify.getText().toString());
+                Integer startTime = Integer.parseInt(start.getText().toString());
+                Integer endTime = Integer.parseInt(end.getText().toString());
+                if (notifyTime != null && startTime != null && endTime != null){
                     /*try{
                         FileOutputStream fos = openFileOutput(fileName, Context.MODE_PRIVATE);
                         fos.write(noteText.getBytes());
@@ -68,8 +70,9 @@ public class MainActivity extends Activity {
 
 // Create a new map of values, where column names are the keys
                         ContentValues values = new ContentValues();
-                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_TITLE, fileName);
-                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_TEXT, noteText);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_NOTIFY, notifyTime);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_START, startTime);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_END, endTime);
 
 // Insert the new row, returning the primary key value of the new row
                         long newRowId;
@@ -78,10 +81,8 @@ public class MainActivity extends Activity {
                                 null,
                                 values);
 
-                    title.setText("");
-                    note.setText("");
-                    aa.insert(fileName,0);
-                    aa.notifyDataSetChanged();
+                    //aa.insert(fileName,0);
+                    //aa.notifyDataSetChanged();
 
 /*                    }catch (IOException e){
                         Log.e("IOException", e.getMessage());*/
@@ -92,7 +93,7 @@ public class MainActivity extends Activity {
 
         save.setFocusable(false);
 
-        notes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+/*        notes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 final TextView title = (TextView) view.findViewById(R.id.titleTextView);
@@ -103,7 +104,7 @@ public class MainActivity extends Activity {
 
             }
 
-        });
+        });*/
     }
 
 

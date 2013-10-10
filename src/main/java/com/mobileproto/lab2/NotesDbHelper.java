@@ -13,10 +13,11 @@ public class NotesDbHelper extends SQLiteOpenHelper {
 
     /* Inner class that defines the table contents */
     public static abstract class FeedEntry implements BaseColumns {
-        public static final String TABLE_NAME = "notes";
+        public static final String TABLE_NAME = "schedule";
         public static final String COLUMN_NAME_ENTRY_ID = "entryid";
-        public static final String COLUMN_NAME_TITLE = "title";
-        public static final String COLUMN_NAME_TEXT = "text";
+        public static final String COLUMN_NAME_NOTIFY = "notify";
+        public static final String COLUMN_NAME_START = "start";
+        public static final String COLUMN_NAME_END = "end";
     }
 
     private static final String TEXT_TYPE = " TEXT";
@@ -25,15 +26,16 @@ public class NotesDbHelper extends SQLiteOpenHelper {
             "CREATE TABLE " + FeedEntry.TABLE_NAME + " (" +
                     FeedEntry._ID + " INTEGER PRIMARY KEY," +
                     FeedEntry.COLUMN_NAME_ENTRY_ID + TEXT_TYPE + COMMA_SEP +
-                    FeedEntry.COLUMN_NAME_TITLE + TEXT_TYPE + COMMA_SEP +
-                    FeedEntry.COLUMN_NAME_TEXT + TEXT_TYPE + " )";
+                    FeedEntry.COLUMN_NAME_NOTIFY + TEXT_TYPE + COMMA_SEP +
+                    FeedEntry.COLUMN_NAME_START + TEXT_TYPE + COMMA_SEP +
+                    FeedEntry.COLUMN_NAME_END + TEXT_TYPE + " )";
 
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + FeedEntry.TABLE_NAME;
 
     // If you change the database schema, you must increment the database version.
     public static final int DATABASE_VERSION = 1;
-    public static final String DATABASE_NAME = "notes.db";
+    public static final String DATABASE_NAME = "schedule.db";
 
     public NotesDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
