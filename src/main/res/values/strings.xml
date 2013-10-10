@@ -8,6 +8,7 @@
     <string name="outside_text">I will be outside: </string>
     <string name="start_field">From: </string>
     <string name="end_field">Until: </string>
+    <string name="colon">:</string>
     <string name="deleteDesc">Delete file</string>
 
 </resources>

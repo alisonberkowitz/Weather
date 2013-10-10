@@ -15,9 +15,12 @@ public class NotesDbHelper extends SQLiteOpenHelper {
     public static abstract class FeedEntry implements BaseColumns {
         public static final String TABLE_NAME = "schedule";
         public static final String COLUMN_NAME_ENTRY_ID = "entryid";
-        public static final String COLUMN_NAME_NOTIFY = "notify";
-        public static final String COLUMN_NAME_START = "start";
-        public static final String COLUMN_NAME_END = "end";
+        public static final String COLUMN_NAME_NOTIFY_HOUR = "notifyhour";
+        public static final String COLUMN_NAME_NOTIFY_MINUTES = "notifyminutes";
+        public static final String COLUMN_NAME_START_HOUR = "starthour";
+        public static final String COLUMN_NAME_START_MINUTES = "startminutes";
+        public static final String COLUMN_NAME_END_HOUR = "endhour";
+        public static final String COLUMN_NAME_END_MINUTES = "endminutes";
     }
 
     private static final String TEXT_TYPE = " TEXT";
@@ -26,9 +29,12 @@ public class NotesDbHelper extends SQLiteOpenHelper {
             "CREATE TABLE " + FeedEntry.TABLE_NAME + " (" +
                     FeedEntry._ID + " INTEGER PRIMARY KEY," +
                     FeedEntry.COLUMN_NAME_ENTRY_ID + TEXT_TYPE + COMMA_SEP +
-                    FeedEntry.COLUMN_NAME_NOTIFY + TEXT_TYPE + COMMA_SEP +
-                    FeedEntry.COLUMN_NAME_START + TEXT_TYPE + COMMA_SEP +
-                    FeedEntry.COLUMN_NAME_END + TEXT_TYPE + " )";
+                    FeedEntry.COLUMN_NAME_NOTIFY_HOUR + TEXT_TYPE + COMMA_SEP +
+                    FeedEntry.COLUMN_NAME_NOTIFY_MINUTES + TEXT_TYPE + COMMA_SEP +
+                    FeedEntry.COLUMN_NAME_START_HOUR + TEXT_TYPE + COMMA_SEP +
+                    FeedEntry.COLUMN_NAME_START_MINUTES + TEXT_TYPE + COMMA_SEP +
+                    FeedEntry.COLUMN_NAME_END_HOUR + TEXT_TYPE + COMMA_SEP +
+                    FeedEntry.COLUMN_NAME_END_MINUTES + TEXT_TYPE + " )";
 
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + FeedEntry.TABLE_NAME;

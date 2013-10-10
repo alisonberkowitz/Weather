@@ -31,11 +31,17 @@ public class MainActivity extends Activity {
 
         mDbHelper = new NotesDbHelper(this);
 
-        final TextView notify = (TextView) findViewById(R.id.notifyField);
+        final TextView notifyHour = (TextView) findViewById(R.id.notifyFieldHour);
 
-        final TextView start = (TextView) findViewById((R.id.startField));
+        final TextView notifyMinutes = (TextView) findViewById(R.id.notifyFieldMinutes);
 
-        final TextView end = (TextView) findViewById(R.id.endField);
+        final TextView startHour = (TextView) findViewById((R.id.startFieldHour));
+
+        final TextView startMinutes = (TextView) findViewById((R.id.startFieldMinutes));
+
+        final TextView endHour = (TextView) findViewById(R.id.endFieldHour);
+
+        final TextView endMinutes = (TextView) findViewById(R.id.endFieldMinutes);
 
 
         List<String> files = new ArrayList<String>(Arrays.asList(fileList()));
@@ -52,10 +58,13 @@ public class MainActivity extends Activity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Integer notifyTime = Integer.parseInt(notify.getText().toString());
-                Integer startTime = Integer.parseInt(start.getText().toString());
-                Integer endTime = Integer.parseInt(end.getText().toString());
-                if (notifyTime != null && startTime != null && endTime != null){
+                Integer notifyHourTime = Integer.parseInt(notifyHour.getText().toString());
+                Integer notifyMinutesTime = Integer.parseInt(notifyMinutes.getText().toString());
+                Integer startHourTime = Integer.parseInt(startHour.getText().toString());
+                Integer startMinutesTime = Integer.parseInt(startMinutes.getText().toString());
+                Integer endHourTime = Integer.parseInt(endHour.getText().toString());
+                Integer endMinutesTime = Integer.parseInt(endMinutes.getText().toString());
+                if (notifyHourTime != null && startHourTime != null && endHourTime != null){
                     /*try{
                         FileOutputStream fos = openFileOutput(fileName, Context.MODE_PRIVATE);
                         fos.write(noteText.getBytes());
@@ -70,9 +79,12 @@ public class MainActivity extends Activity {
 
 // Create a new map of values, where column names are the keys
                         ContentValues values = new ContentValues();
-                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_NOTIFY, notifyTime);
-                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_START, startTime);
-                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_END, endTime);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_NOTIFY_HOUR, notifyHourTime);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_NOTIFY_MINUTES, notifyMinutesTime);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_START_HOUR, startHourTime);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_START_MINUTES, startMinutesTime);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_END_HOUR, endHourTime);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_END_MINUTES, endMinutesTime);
 
 // Insert the new row, returning the primary key value of the new row
                         long newRowId;

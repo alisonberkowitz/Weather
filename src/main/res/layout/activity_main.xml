@@ -14,17 +14,37 @@
         android:text="@string/notify_field"
         android:id="@+id/notifyText"
         android:textAppearance="?android:textAppearanceMedium"
-        android:layout_alignBaseline="@+id/notifyField"
-        android:layout_alignBottom="@+id/notifyField" />
+        android:layout_alignBaseline="@+id/notifyFieldHour"
+        android:layout_alignBottom="@+id/notifyFieldHour" />
 
     <EditText
-        android:layout_width="164dp"
+        android:layout_width="25dp"
         android:inputType="text"
         android:layout_height="wrap_content"
         android:background="@color/grey"
-        android:id="@+id/notifyField"
+        android:id="@+id/notifyFieldHour"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/notifyText"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/colon"
+        android:id="@+id/colon1"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignBaseline="@+id/notifyFieldHour"
+        android:layout_alignBottom="@+id/notifyFieldHour"
+        android:layout_toRightOf="@id/notifyFieldHour"/>
+
+    <EditText
+        android:layout_width="25dp"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:id="@+id/notifyFieldMinutes"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/colon1"
         android:layout_marginTop="12dp" />
 
     <TextView
@@ -33,7 +53,7 @@
         android:text="@string/outside_text"
         android:id="@+id/outsideText"
         android:textAppearance="?android:textAppearanceMedium"
-        android:layout_below="@+id/notifyField"/>
+        android:layout_below="@+id/notifyFieldHour"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,12 +65,31 @@
         android:layout_below="@+id/outsideText"/>
 
     <EditText
-        android:layout_width="164dp"
+        android:layout_width="25dp"
         android:inputType="text"
         android:layout_height="wrap_content"
         android:background="@color/grey"
-        android:id="@+id/startField"
+        android:id="@+id/startFieldHour"
         android:layout_toRightOf="@+id/startText"
+        android:layout_below="@+id/outsideText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/colon"
+        android:id="@+id/colon2"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignBaseline="@+id/startFieldHour"
+        android:layout_alignBottom="@+id/startFieldHour"
+        android:layout_toRightOf="@id/startFieldHour"/>
+
+    <EditText
+        android:layout_width="25dp"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:id="@+id/startFieldMinutes"
+        android:layout_toRightOf="@+id/colon2"
         android:layout_below="@+id/outsideText" />
 
     <TextView
@@ -60,15 +99,34 @@
         android:id="@+id/endText"
         android:textAppearance="?android:textAppearanceMedium"
         android:layout_alignLeft="@+id/startText"
-        android:layout_below="@+id/startField"/>
+        android:layout_below="@+id/startFieldHour"/>
 
     <EditText
-        android:layout_width="164dp"
+        android:layout_width="25dp"
         android:inputType="text"
         android:layout_height="wrap_content"
         android:background="@color/grey"
-        android:id="@+id/endField"
+        android:id="@+id/endFieldHour"
         android:layout_toRightOf="@+id/endText"
+        android:layout_below="@+id/startText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/colon"
+        android:id="@+id/colon3"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_alignBaseline="@+id/endFieldHour"
+        android:layout_alignBottom="@+id/endFieldHour"
+        android:layout_toRightOf="@id/endFieldHour"/>
+
+    <EditText
+        android:layout_width="25dp"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:id="@+id/endFieldMinutes"
+        android:layout_toRightOf="@+id/colon3"
         android:layout_below="@+id/startText" />
 
 
