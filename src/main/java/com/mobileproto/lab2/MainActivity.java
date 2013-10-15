@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
@@ -14,8 +15,19 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -52,8 +64,80 @@ public class MainActivity extends Activity {
 
         //notes.setAdapter(aa);
 
-
+        final Button showWeather = (Button) findViewById(R.id.showWeather);
         Button save = (Button)findViewById(R.id.saveButton);
+
+        showWeather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                AsyncTask utahraptor = new AsyncTask<Void, Void, ArrayList<FeedItem>>(){
+                    protected ArrayList<FeedItem> doInBackground(Void... voids){
+
+                        ArrayList<FeedItem> twits = new ArrayList<FeedItem>();
+                        ArrayList<FeedItem> middle = new ArrayList<FeedItem>();
+                        String gatsby = "";
+
+                        // defaultHttpClient
+                        DefaultHttpClient httpClient = new DefaultHttpClient();
+//        HttpGet pull = new HttpGet("http://twitterproto.herokuapp.com/tweets");
+                        HttpGet pull = new HttpGet("http://api.wunderground.com/api/dd14b81695901028/hourly/q/MA/Needham.json");
+                        pull.setHeader("Content-type","application/json");
+
+                        try{
+                            HttpResponse httpResponse = httpClient.execute(pull);
+                            HttpEntity httpEntity = httpResponse.getEntity();
+                            InputStream is = httpEntity.getContent();
+
+                            BufferedReader read = new BufferedReader(new InputStreamReader(is,"UTF-8"),8);
+                            StringBuilder build = new StringBuilder();
+
+                            String line;
+                            String nl = System.getProperty("line.separator");
+                            while ((line = read.readLine()) != null) {
+                                build.append(line + nl);
+                            }
+
+                            gatsby = build.toString();
+
+                        }
+
+
+
+                        catch (Exception e) {
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            JSONObject ntweet = new JSONObject(gatsby);
+                            JSONArray list = ntweet.getJSONArray("hourly_forecast");
+
+                            for (int i=0; i<list.length(); i++){
+                                FeedItem swag = new FeedItem(startHour.getText()+" pm feels like " + list.getJSONObject(i).getJSONObject("feelslike").getString("english"), list.getJSONObject(i).getString("condition"));
+                                Log.d(swag.toString(), "hello");
+                                if (list.getJSONObject(i).getJSONObject("FCTTIME").getString("pretty").contains(startHour.getText()+":00 PM")){
+                                    twits.add(swag);
+                                }
+                            }
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        return twits;
+
+                    }
+
+                    protected void onPostExecute(ArrayList<FeedItem> twits) {
+                        Log.d("couldbehere", "yes");
+                        FeedListAdapter feedListAdapter = new FeedListAdapter(getApplicationContext(), twits);
+                        ListView wList = (ListView) findViewById(R.id.weatherList);
+                        wList.setAdapter(feedListAdapter);
+                        Log.d("itishere","yes");
+                    }
+
+                }.execute();
+            }
+        });
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,6 +187,8 @@ public class MainActivity extends Activity {
             }
         });
 
+
+
         save.setFocusable(false);
 
 /*        notes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -126,5 +212,7 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
+
 
 }
