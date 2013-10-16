@@ -20,6 +20,7 @@
     <EditText
         android:layout_width="25dp"
         android:inputType="time"
+        android:maxLength="2"
         android:layout_height="wrap_content"
         android:background="@color/grey"
         android:id="@+id/notifyFieldHour"
@@ -40,6 +41,7 @@
     <EditText
         android:layout_width="25dp"
         android:inputType="time"
+        android:maxLength="2"
         android:layout_height="wrap_content"
         android:background="@color/grey"
         android:id="@+id/notifyFieldMinutes"
@@ -67,6 +69,7 @@
     <EditText
         android:layout_width="25dp"
         android:inputType="time"
+        android:maxLength="2"
         android:layout_height="wrap_content"
         android:background="@color/grey"
         android:id="@+id/startFieldHour"
@@ -86,6 +89,7 @@
     <EditText
         android:layout_width="25dp"
         android:inputType="time"
+        android:maxLength="2"
         android:layout_height="wrap_content"
         android:background="@color/grey"
         android:id="@+id/startFieldMinutes"
@@ -104,6 +108,7 @@
     <EditText
         android:layout_width="25dp"
         android:inputType="time"
+        android:maxLength="2"
         android:layout_height="wrap_content"
         android:background="@color/grey"
         android:id="@+id/endFieldHour"
@@ -123,6 +128,7 @@
     <EditText
         android:layout_width="25dp"
         android:inputType="time"
+        android:maxLength="2"
         android:layout_height="wrap_content"
         android:background="@color/grey"
         android:id="@+id/endFieldMinutes"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Lab2</string>
+    <string name="app_name">Rain Check</string>
     <string name="action_settings">Settings</string>
     <string name="save">Save Settings</string>
     <string name="notify_field">Time I want to be notified: </string>
