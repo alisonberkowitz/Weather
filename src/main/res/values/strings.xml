@@ -6,8 +6,8 @@
     <string name="save">Save Settings</string>
     <string name="notify_field">Time I want to be notified: </string>
     <string name="outside_text">I will be outside: </string>
-    <string name="start_field">From: </string>
-    <string name="end_field">Until: </string>
+    <string name="start_field">From </string>
+    <string name="end_field">Until </string>
     <string name="colon">:</string>
     <string name="deleteDesc">Delete file</string>
     <string name="notify_hour">TimePickerFragment.notify_hour</string>

@@ -117,8 +117,12 @@ public class MainActivity extends Activity {
                             for (int i=0; i<list.length(); i++){
                                 FeedItem swag = new FeedItem(startHour.getText()+" pm feels like " + list.getJSONObject(i).getJSONObject("feelslike").getString("english"), list.getJSONObject(i).getString("condition"));
                                 Log.d(swag.toString(), "hello");
+                                int cut = startHour.toString().indexOf(":");
+                                int dHour = list.getJSONObject(i).getJSONObject("feelslike").getString("english").indexOf(":");
                                 if (list.getJSONObject(i).getJSONObject("FCTTIME").getString("pretty").contains(startHour.getText()+":00 PM")){
-                                    twits.add(swag);
+                                    if (dHour == cut) {
+                                        twits.add(swag);
+                                    }
                                 }
                             }
 
