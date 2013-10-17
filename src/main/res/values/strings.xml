@@ -11,5 +11,7 @@
     <string name="colon">:</string>
     <string name="deleteDesc">Delete file</string>
     <string name="notify_hour">TimePickerFragment.notify_hour</string>
+    <string name="pm">PM</string>
+    <string name="am">AM</string>
 
 </resources>

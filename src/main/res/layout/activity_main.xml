@@ -18,7 +18,8 @@
     <EditText
         android:textColor="#ffffff"
         android:textSize="40sp"
-        android:hint="00"
+        android:hint="--"
+        android:gravity="center_horizontal"
         android:layout_width="50dp"
         android:inputType="time"
         android:layout_height="50dp"
@@ -43,7 +44,8 @@
     <EditText
         android:textColor="#ffffff"
         android:textSize="40sp"
-        android:hint="00"
+        android:hint="--"
+        android:gravity="center_horizontal"
         android:layout_width="50dp"
         android:inputType="time"
         android:layout_height="50dp"
@@ -194,19 +196,23 @@
     <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PM"
+        android:text="@string/pm"
         android:id="@+id/toggleButton"
         android:layout_above="@+id/endText"
+        android:textOn="@string/pm"
+        android:textOff="@string/am"
         android:layout_alignRight="@+id/showWeather"
         android:checked="false" />
 
     <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PM"
+        android:text="@string/pm"
         android:id="@+id/toggleButton2"
         android:layout_alignBottom="@+id/endFieldMinutes"
         android:layout_alignRight="@+id/showWeather"
+        android:textOn="@string/pm"
+        android:textOff="@string/am"
         android:checked="false" />
 
 </RelativeLayout>
