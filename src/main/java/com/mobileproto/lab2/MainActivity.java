@@ -119,10 +119,12 @@ public class MainActivity extends Activity {
                                 Log.d(swag.toString(), "hello");
                                 int cut = startHour.toString().indexOf(":");
                                 int dHour = list.getJSONObject(i).getJSONObject("feelslike").getString("english").indexOf(":");
+                                Log.isLoggable("What is it", cut);
+                                Log.isLoggable("meeeeeeow", dHour);
                                 if (list.getJSONObject(i).getJSONObject("FCTTIME").getString("pretty").contains(startHour.getText()+":00 PM")){
-                                    if (dHour == cut) {
-                                        twits.add(swag);
-                                    }
+
+                                    twits.add(swag);
+
                                 }
                             }
 
