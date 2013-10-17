@@ -74,22 +74,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state line="76" column="45" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.7627119" vertical-offset="150" max-vertical-offset="3345">
+            <state line="147" column="67" selection-start="6023" selection-end="6023" vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="3435">
               <folding>
                 <element signature="e#2345#5952#0" expanded="true" />
                 <element signature="e#5941#5942#0" expanded="true" />
                 <element signature="e#6075#6225#0" expanded="true" />
                 <element signature="e#6214#6215#0" expanded="true" />
-=======
-            <state line="70" column="10" selection-start="2252" selection-end="2252" vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="3330">
-              <folding>
-                <element signature="e#5772#5922#0" expanded="true" />
-                <element signature="e#5911#5912#0" expanded="true" />
->>>>>>> origin
               </folding>
             </state>
           </provider>
@@ -98,11 +91,7 @@
       <file leaf-file-name="NotesDbHelper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NotesDbHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
             <state line="37" column="0" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="283" max-vertical-offset="945">
-=======
-            <state line="37" column="0" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="945">
->>>>>>> origin
               <folding />
             </state>
           </provider>
@@ -110,82 +99,41 @@
       </file>
       <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-<<<<<<< HEAD
           <provider selected="true" editor-type-id="text-editor">
-            <state line="194" column="43" selection-start="7113" selection-end="7113" vertical-scroll-proportion="-18.538462" vertical-offset="2428" max-vertical-offset="3120">
-=======
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="188" column="0" selection-start="6782" selection-end="6782" vertical-scroll-proportion="0.947541" vertical-offset="2242" max-vertical-offset="2925">
->>>>>>> origin
+            <state line="142" column="0" selection-start="5278" selection-end="5278" vertical-scroll-proportion="-19.115385" vertical-offset="1633" max-vertical-offset="3255">
               <folding>
                 <element signature="e#231#266#0" expanded="true" />
                 <element signature="e#292#327#0" expanded="true" />
                 <element signature="e#351#384#0" expanded="true" />
                 <element signature="e#411#444#0" expanded="true" />
                 <element signature="e#605#627#0" expanded="true" />
-<<<<<<< HEAD
-                <element signature="e#1355#1370#0" expanded="true" />
-                <element signature="e#2147#2169#0" expanded="true" />
-                <element signature="e#2536#2557#0" expanded="true" />
-                <element signature="e#3461#3476#0" expanded="true" />
-                <element signature="e#4359#4378#0" expanded="true" />
-                <element signature="e#5283#5298#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-=======
                 <element signature="e#1320#1335#0" expanded="true" />
                 <element signature="e#2303#2325#0" expanded="true" />
                 <element signature="e#2697#2718#0" expanded="true" />
-                <element signature="e#3578#3593#0" expanded="true" />
-                <element signature="e#4432#4451#0" expanded="true" />
-                <element signature="e#5303#5318#0" expanded="true" />
+                <element signature="e#3622#3637#0" expanded="true" />
+                <element signature="e#4520#4539#0" expanded="true" />
+                <element signature="e#5435#5450#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weather_item.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/weather_item.xml">
->>>>>>> origin
           <provider editor-type-id="android-designer">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="35" selection-start="777" selection-end="777" vertical-scroll-proportion="-10.344828" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+            <state line="38" column="0" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.8610272" vertical-offset="0" max-vertical-offset="662">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weather_item.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/weather_item.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="55" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/values-v11/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
+            <state line="11" column="0" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -244,28 +192,17 @@
         <option value="$PROJECT_DIR$/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values-v11/styles.xml" />
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/weather_item.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java" />
-=======
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/weather_item.xml" />
->>>>>>> origin
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-<<<<<<< HEAD
     <option name="y" value="28" />
     <option name="width" value="1600" />
     <option name="height" value="872" />
-=======
-    <option name="x" value="71" />
-    <option name="y" value="35" />
-    <option name="width" value="1508" />
-    <option name="height" value="837" />
->>>>>>> origin
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -495,9 +432,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="015d18ad5d1c000a" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="MyPhone" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Zeus" />
   </component>
   <component name="RunManager" selected="Android Application.try2">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -674,21 +611,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
     <frame x="0" y="28" width="1600" height="872" extended-state="6" />
-=======
-    <frame x="71" y="35" width="1508" height="837" extended-state="0" />
->>>>>>> origin
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3217503" sideWeight="0.94254446" order="4" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32138115" sideWeight="0.94225353" order="4" side_tool="false" content_ui="tabs" />
->>>>>>> origin
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -696,27 +625,16 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24949153" sideWeight="0.28591353" order="2" side_tool="true" content_ui="tabs" />
-<<<<<<< HEAD
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32147744" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.05745554" sideWeight="0.49966103" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32253522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.057746477" sideWeight="0.49966103" order="7" side_tool="false" content_ui="tabs" />
->>>>>>> origin
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2072072" sideWeight="0.94254446" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22161423" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20717132" sideWeight="0.94225353" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22253521" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
->>>>>>> origin
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -736,7 +654,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="40" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1035">
@@ -744,8 +661,6 @@
         </state>
       </provider>
     </entry>
-=======
->>>>>>> origin
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NotesDbHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="82" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
@@ -757,15 +672,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="13" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1845">
           <folding>
-<<<<<<< HEAD
             <element signature="e#2345#5952#0" expanded="true" />
             <element signature="e#5941#5942#0" expanded="true" />
             <element signature="e#6075#6225#0" expanded="true" />
             <element signature="e#6214#6215#0" expanded="true" />
-=======
-            <element signature="e#5772#5922#0" expanded="true" />
-            <element signature="e#5911#5912#0" expanded="true" />
->>>>>>> origin
           </folding>
         </state>
       </provider>
@@ -794,7 +704,6 @@
         <state line="64" column="9" selection-start="2125" selection-end="2125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960" />
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/TimePickerFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="1" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.63479626" vertical-offset="0" max-vertical-offset="638">
@@ -803,23 +712,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
->>>>>>> origin
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/weather_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="55" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NotesDbHelper.java">
@@ -843,102 +739,54 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="43" selection-start="7113" selection-end="7113" vertical-scroll-proportion="-18.538462" vertical-offset="2428" max-vertical-offset="3120">
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NotesDbHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="10" selection-start="2252" selection-end="2252" vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="3330">
-          <folding>
-            <element signature="e#5772#5922#0" expanded="true" />
-            <element signature="e#5911#5912#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/weather.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/weather_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="35" selection-start="777" selection-end="777" vertical-scroll-proportion="-10.344828" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="0" selection-start="6782" selection-end="6782" vertical-scroll-proportion="0.947541" vertical-offset="2242" max-vertical-offset="2925">
->>>>>>> origin
-          <folding>
-            <element signature="e#231#266#0" expanded="true" />
-            <element signature="e#292#327#0" expanded="true" />
-            <element signature="e#351#384#0" expanded="true" />
-            <element signature="e#411#444#0" expanded="true" />
-            <element signature="e#605#627#0" expanded="true" />
-<<<<<<< HEAD
-            <element signature="e#1355#1370#0" expanded="true" />
-            <element signature="e#2147#2169#0" expanded="true" />
-            <element signature="e#2536#2557#0" expanded="true" />
-            <element signature="e#3461#3476#0" expanded="true" />
-            <element signature="e#4359#4378#0" expanded="true" />
-            <element signature="e#5283#5298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-=======
-            <element signature="e#1320#1335#0" expanded="true" />
-            <element signature="e#2303#2325#0" expanded="true" />
-            <element signature="e#2697#2718#0" expanded="true" />
-            <element signature="e#3578#3593#0" expanded="true" />
-            <element signature="e#4432#4451#0" expanded="true" />
-            <element signature="e#5303#5318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
->>>>>>> origin
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="45" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.7627119" vertical-offset="150" max-vertical-offset="3345">
+        <state line="147" column="67" selection-start="6023" selection-end="6023" vertical-scroll-proportion="0.0" vertical-offset="1320" max-vertical-offset="3435">
           <folding>
             <element signature="e#2345#5952#0" expanded="true" />
             <element signature="e#5941#5942#0" expanded="true" />
             <element signature="e#6075#6225#0" expanded="true" />
             <element signature="e#6214#6215#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="0" selection-start="5278" selection-end="5278" vertical-scroll-proportion="-19.115385" vertical-offset="1633" max-vertical-offset="3255">
+          <folding>
+            <element signature="e#231#266#0" expanded="true" />
+            <element signature="e#292#327#0" expanded="true" />
+            <element signature="e#351#384#0" expanded="true" />
+            <element signature="e#411#444#0" expanded="true" />
+            <element signature="e#605#627#0" expanded="true" />
+            <element signature="e#1320#1335#0" expanded="true" />
+            <element signature="e#2303#2325#0" expanded="true" />
+            <element signature="e#2697#2718#0" expanded="true" />
+            <element signature="e#3622#3637#0" expanded="true" />
+            <element signature="e#4520#4539#0" expanded="true" />
+            <element signature="e#5435#5450#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/weather_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="49" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.6132075" vertical-offset="0" max-vertical-offset="636">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.8610272" vertical-offset="0" max-vertical-offset="662">
+          <folding />
         </state>
       </provider>
     </entry>
