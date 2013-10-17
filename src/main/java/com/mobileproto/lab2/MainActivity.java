@@ -17,6 +17,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -58,6 +59,9 @@ public class MainActivity extends Activity {
 
         final TextView endMinutes = (TextView) findViewById(R.id.endFieldMinutes);
 
+        final ToggleButton tb1 = (ToggleButton) findViewById(R.id.pm1);
+
+        final ToggleButton tb2 = (ToggleButton) findViewById(R.id.pm2);
 
         List<String> files = new ArrayList<String>(Arrays.asList(fileList()));
 
@@ -114,14 +118,47 @@ public class MainActivity extends Activity {
                             JSONObject ntweet = new JSONObject(gatsby);
                             JSONArray list = ntweet.getJSONArray("hourly_forecast");
 
+//                            int x = 0;
+
                             for (int i=0; i<list.length(); i++){
-                                FeedItem swag = new FeedItem(startHour.getText()+" pm feels like " + list.getJSONObject(i).getJSONObject("feelslike").getString("english"), list.getJSONObject(i).getString("condition"));
-                                Log.d(swag.toString(), "hello");
                                 int cut = startHour.toString().indexOf(":");
                                 int dHour = list.getJSONObject(i).getJSONObject("feelslike").getString("english").indexOf(":");
+                                String time1;
+                                String time2;
+
+                                if (tb1.isChecked()){
+                                    time1 = "PM";
+                                } else {
+                                    time1 = "AM";
+                                }
+                                if (tb2.isChecked()){
+                                    time2 = "PM";
+                                } else {
+                                    time2 = "AM";
+                                }
+//                                String placeone = startHour.toString();
+//                                int place1 = Integer.parseInt(placeone);
+//
+//                                String placetwo = endHour.toString();
+//                                int place2 = Integer.parseInt(placetwo);
+
+//                                int dif = place2 - place1;
+
+                                FeedItem swag = new FeedItem(startHour.getText()+" " + time1 +" feels like " + list.getJSONObject(i).getJSONObject("feelslike").getString("english"), list.getJSONObject(i).getString("condition"));
+                                Log.d(swag.toString(), "hello");
+
+//                                ArrayList<Integer> nums = new ArrayList<Integer>();
+//
+//                                while (x < dif) {
+//                                    nums.add(x);
+//                                    x = x+1;
+//                                }
+//
+//                                Log.d(nums.toString(), "hhhheeelllooo");
+
                                 Log.isLoggable("What is it", cut);
                                 Log.isLoggable("meeeeeeow", dHour);
-                                if (list.getJSONObject(i).getJSONObject("FCTTIME").getString("pretty").contains(startHour.getText()+":00 PM")){
+                                if (list.getJSONObject(i).getJSONObject("FCTTIME").getString("pretty").contains(startHour.getText()+":00 " + time1)){
 
                                     twits.add(swag);
 
