@@ -101,7 +101,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="46" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.48032787" vertical-offset="127" max-vertical-offset="2910">
+            <state line="188" column="0" selection-start="6782" selection-end="6782" vertical-scroll-proportion="0.947541" vertical-offset="2242" max-vertical-offset="2925">
               <folding>
                 <element signature="e#231#266#0" expanded="true" />
                 <element signature="e#292#327#0" expanded="true" />
@@ -115,6 +115,18 @@
                 <element signature="e#4432#4451#0" expanded="true" />
                 <element signature="e#5303#5318#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weather_item.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/weather_item.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="35" selection-start="777" selection-end="777" vertical-scroll-proportion="-10.344828" vertical-offset="0" max-vertical-offset="510">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/weather_item.xml" />
       </list>
     </option>
   </component>
@@ -640,7 +653,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
+        <state line="20" column="35" selection-start="777" selection-end="777" vertical-scroll-proportion="-10.344828" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
@@ -650,7 +663,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="46" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.48032787" vertical-offset="127" max-vertical-offset="2910">
+        <state line="188" column="0" selection-start="6782" selection-end="6782" vertical-scroll-proportion="0.947541" vertical-offset="2242" max-vertical-offset="2925">
           <folding>
             <element signature="e#231#266#0" expanded="true" />
             <element signature="e#292#327#0" expanded="true" />
