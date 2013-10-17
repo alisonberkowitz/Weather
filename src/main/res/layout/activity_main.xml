@@ -55,7 +55,9 @@
         android:text="@string/outside_text"
         android:id="@+id/outsideText"
         android:textAppearance="?android:textAppearanceMedium"
-        android:layout_below="@+id/notifyFieldHour"/>
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/notifyText"
+        android:layout_alignLeft="@+id/notifyText"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -70,15 +72,17 @@
         android:textSize="35sp" />
 
     <EditText
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:hint="00"
         android:layout_width="50dp"
         android:inputType="time"
         android:layout_height="50dp"
         android:maxLength="2"
         android:background="@color/grey"
         android:id="@+id/startFieldHour"
-        android:layout_alignBottom="@+id/startText"
-        android:layout_toRightOf="@id/startText"
-        android:layout_marginLeft="30dp"/>
+        android:layout_alignTop="@+id/colon2"
+        android:layout_toLeftOf="@+id/colon2"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -86,12 +90,14 @@
         android:text="@string/colon"
         android:id="@+id/colon2"
         android:textAppearance="?android:textAppearanceMedium"
-        android:layout_alignBaseline="@+id/startFieldHour"
-        android:layout_alignBottom="@+id/startFieldHour"
-        android:layout_toRightOf="@id/startFieldHour"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/startText"
+        android:layout_toLeftOf="@+id/endFieldMinutes"/>
 
     <EditText
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:hint="00"
         android:layout_width="50dp"
         android:inputType="time"
         android:layout_height="50dp"
@@ -114,38 +120,40 @@
         android:layout_alignRight="@+id/outsideText" />
 
     <EditText
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:hint="00"
         android:layout_width="50dp"
         android:inputType="time"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
         android:maxLength="2"
         android:background="@color/grey"
         android:id="@+id/endFieldHour"
-        android:layout_below="@+id/startFieldHour"
-        android:layout_alignLeft="@id/startFieldHour" />
+        android:layout_alignBottom="@+id/endText"
+        android:layout_toLeftOf="@+id/notifyFieldHour"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        android:layout_marginTop="10dp"
         android:text="@string/colon"
         android:id="@+id/colon3"
         android:textAppearance="?android:textAppearanceMedium"
-        android:layout_below="@+id/colon2"
-        android:layout_alignLeft="@id/colon2"
-        android:layout_marginBottom="10dp" />
+        android:layout_alignTop="@+id/endText"
+        android:layout_alignLeft="@+id/notifyFieldHour"/>
 
     <EditText
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:hint="00"
         android:layout_width="50dp"
         android:inputType="time"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
         android:maxLength="2"
         android:background="@color/grey"
         android:id="@+id/endFieldMinutes"
-        android:layout_below="@+id/startFieldMinutes"
-        android:layout_alignLeft="@+id/startFieldMinutes" />
+        android:layout_alignBottom="@+id/endText"
+        android:layout_toRightOf="@+id/colon3"/>
 
     <ListView
         android:layout_width="wrap_content"
@@ -158,8 +166,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/save"
-        android:id="@+id/saveButton"
+        android:text="Notify"
+        android:id="@+id/notifyButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"/>
 
