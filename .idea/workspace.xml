@@ -77,7 +77,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="159" column="0" selection-start="6720" selection-end="6720" vertical-scroll-proportion="0.0" vertical-offset="2385" max-vertical-offset="3360">
+            <state line="54" column="0" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="3360">
               <folding />
             </state>
           </provider>
@@ -94,8 +94,11 @@
       </file>
       <file leaf-file-name="activity_main.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="43" selection-start="627" selection-end="627" vertical-scroll-proportion="0.32019705" vertical-offset="0" max-vertical-offset="2535">
+            <state line="140" column="32" selection-start="5311" selection-end="5311" vertical-scroll-proportion="0.3497537" vertical-offset="1887" max-vertical-offset="2685">
               <folding>
                 <element signature="e#231#266#0" expanded="true" />
                 <element signature="e#292#327#0" expanded="true" />
@@ -105,22 +108,19 @@
                 <element signature="e#1355#1370#0" expanded="true" />
                 <element signature="e#2147#2169#0" expanded="true" />
                 <element signature="e#2450#2471#0" expanded="true" />
-                <element signature="e#3138#3153#0" expanded="true" />
-                <element signature="e#3889#3908#0" expanded="true" />
-                <element signature="e#4570#4585#0" expanded="true" />
-                <element signature="e#5635#5649#0" expanded="true" />
+                <element signature="e#3287#3302#0" expanded="true" />
+                <element signature="e#4114#4133#0" expanded="true" />
+                <element signature="e#4981#4996#0" expanded="true" />
+                <element signature="e#6009#6023#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="34" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+            <state line="15" column="34" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
@@ -157,8 +157,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="78" />
-    <option name="y" value="54" />
+    <option name="x" value="71" />
+    <option name="y" value="35" />
     <option name="width" value="1508" />
     <option name="height" value="837" />
   </component>
@@ -188,6 +188,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,7 +295,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -338,19 +338,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -376,6 +363,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -512,13 +512,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="78" y="54" width="1508" height="837" extended-state="0" />
+    <frame x="71" y="35" width="1508" height="837" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32138115" sideWeight="0.9408451" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32204515" sideWeight="0.9408451" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -569,7 +569,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="40" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1035" />
+        <state line="25" column="40" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1035">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NotesDbHelper.java">
@@ -593,24 +595,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="58" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="885" />
+        <state line="47" column="58" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="885">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="36" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="885" />
+        <state line="47" column="36" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="885">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NoteDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="9" selection-start="2125" selection-end="2125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="0" selection-start="6720" selection-end="6720" vertical-scroll-proportion="0.0" vertical-offset="2385" max-vertical-offset="3360">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/NotesDbHelper.java">
@@ -648,9 +647,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mobileproto/lab2/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="43" selection-start="627" selection-end="627" vertical-scroll-proportion="0.32019705" vertical-offset="0" max-vertical-offset="2535">
+        <state line="54" column="0" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.0" vertical-offset="129" max-vertical-offset="2820">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="32" selection-start="5311" selection-end="5311" vertical-scroll-proportion="0.3497537" vertical-offset="1887" max-vertical-offset="2685">
           <folding>
             <element signature="e#231#266#0" expanded="true" />
             <element signature="e#292#327#0" expanded="true" />
@@ -660,15 +669,12 @@
             <element signature="e#1355#1370#0" expanded="true" />
             <element signature="e#2147#2169#0" expanded="true" />
             <element signature="e#2450#2471#0" expanded="true" />
-            <element signature="e#3138#3153#0" expanded="true" />
-            <element signature="e#3889#3908#0" expanded="true" />
-            <element signature="e#4570#4585#0" expanded="true" />
-            <element signature="e#5635#5649#0" expanded="true" />
+            <element signature="e#3287#3302#0" expanded="true" />
+            <element signature="e#4114#4133#0" expanded="true" />
+            <element signature="e#4981#4996#0" expanded="true" />
+            <element signature="e#6009#6023#0" expanded="true" />
           </folding>
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
   </component>

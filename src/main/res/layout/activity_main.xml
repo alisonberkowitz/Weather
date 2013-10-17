@@ -63,18 +63,22 @@
         android:text="@string/start_field"
         android:id="@+id/startText"
         android:textAppearance="?android:textAppearanceMedium"
-        android:layout_alignLeft="@+id/notifyText"
-        android:layout_below="@+id/outsideText"/>
+        android:layout_below="@+id/outsideText"
+        android:layout_alignLeft="@+id/endText"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="11dp"
+        android:textSize="35sp" />
 
     <EditText
-        android:layout_width="25dp"
+        android:layout_width="50dp"
         android:inputType="time"
+        android:layout_height="50dp"
         android:maxLength="2"
-        android:layout_height="wrap_content"
         android:background="@color/grey"
         android:id="@+id/startFieldHour"
-        android:layout_toRightOf="@+id/startText"
-        android:layout_below="@+id/outsideText"/>
+        android:layout_alignBottom="@+id/startText"
+        android:layout_toRightOf="@id/startText"
+        android:layout_marginLeft="30dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -84,17 +88,19 @@
         android:textAppearance="?android:textAppearanceMedium"
         android:layout_alignBaseline="@+id/startFieldHour"
         android:layout_alignBottom="@+id/startFieldHour"
-        android:layout_toRightOf="@id/startFieldHour"/>
+        android:layout_toRightOf="@id/startFieldHour"
+        android:textSize="30sp" />
 
     <EditText
-        android:layout_width="25dp"
+        android:layout_width="50dp"
         android:inputType="time"
+        android:layout_height="50dp"
         android:maxLength="2"
-        android:layout_height="wrap_content"
         android:background="@color/grey"
         android:id="@+id/startFieldMinutes"
-        android:layout_toRightOf="@+id/colon2"
-        android:layout_below="@+id/outsideText" />
+        android:layout_alignTop="@+id/startFieldHour"
+        android:layout_toRightOf="@id/colon2"
+        android:layout_alignParentEnd="false" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -102,46 +108,51 @@
         android:text="@string/end_field"
         android:id="@+id/endText"
         android:textAppearance="?android:textAppearanceMedium"
-        android:layout_alignLeft="@+id/startText"
-        android:layout_below="@+id/startFieldHour"/>
+        android:textSize="40sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/startText"
+        android:layout_alignRight="@+id/outsideText" />
 
     <EditText
-        android:layout_width="25dp"
+        android:layout_width="50dp"
         android:inputType="time"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:maxLength="2"
-        android:layout_height="wrap_content"
         android:background="@color/grey"
         android:id="@+id/endFieldHour"
-        android:layout_toRightOf="@+id/endText"
-        android:layout_below="@+id/startText" />
+        android:layout_below="@+id/startFieldHour"
+        android:layout_alignLeft="@id/startFieldHour" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
         android:text="@string/colon"
         android:id="@+id/colon3"
         android:textAppearance="?android:textAppearanceMedium"
-        android:layout_alignBaseline="@+id/endFieldHour"
-        android:layout_alignBottom="@+id/endFieldHour"
-        android:layout_toRightOf="@id/endFieldHour"/>
+        android:layout_below="@+id/colon2"
+        android:layout_alignLeft="@id/colon2"
+        android:layout_marginBottom="10dp" />
 
     <EditText
-        android:layout_width="25dp"
+        android:layout_width="50dp"
         android:inputType="time"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:maxLength="2"
-        android:layout_height="wrap_content"
         android:background="@color/grey"
         android:id="@+id/endFieldMinutes"
-        android:layout_toRightOf="@+id/colon3"
-        android:layout_below="@+id/startText" />
+        android:layout_below="@+id/startFieldMinutes"
+        android:layout_alignLeft="@+id/startFieldMinutes" />
 
     <ListView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/endFieldMinutes"
-        android:layout_marginBottom="60dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="30dp"
         android:id="@+id/weatherList"
+        android:layout_marginTop="200dp"
         android:layout_centerHorizontal="true" />
 
     <Button
