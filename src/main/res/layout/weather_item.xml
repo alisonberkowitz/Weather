@@ -7,7 +7,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Medium Text"
         android:textColor="@color/grey"
@@ -19,11 +18,7 @@
     <TextView
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:textColor="@color/grey"
-=======
-        android:textColor="#000000"
->>>>>>> origin
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Small Text"
         android:id="@+id/feedText"
