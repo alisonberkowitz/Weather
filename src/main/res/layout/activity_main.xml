@@ -13,19 +13,20 @@
         android:layout_height="wrap_content"
         android:text="@string/notify_field"
         android:id="@+id/notifyText"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:layout_alignBaseline="@+id/notifyFieldHour"
-        android:layout_alignBottom="@+id/notifyFieldHour" />
+        android:textAppearance="?android:textAppearanceMedium" />
 
     <EditText
-        android:layout_width="25dp"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:hint="00"
+        android:layout_width="50dp"
         android:inputType="time"
-        android:maxLength="2"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="@color/grey"
+        android:maxLength="2"
         android:id="@+id/notifyFieldHour"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/notifyText"
+        android:layout_below="@id/notifyText"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp" />
 
     <TextView
@@ -34,19 +35,24 @@
         android:text="@string/colon"
         android:id="@+id/colon1"
         android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="30sp"
         android:layout_alignBaseline="@+id/notifyFieldHour"
         android:layout_alignBottom="@+id/notifyFieldHour"
         android:layout_toRightOf="@id/notifyFieldHour"/>
 
     <EditText
-        android:layout_width="25dp"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:hint="00"
+        android:layout_width="50dp"
         android:inputType="time"
+        android:layout_height="50dp"
         android:maxLength="2"
-        android:layout_height="wrap_content"
         android:background="@color/grey"
         android:id="@+id/notifyFieldMinutes"
-        android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/colon1"
+        android:layout_alignBaseline="@+id/notifyFieldHour"
+        android:layout_alignBottom="@+id/notifyFieldHour"
         android:layout_marginTop="12dp" />
 
     <TextView
@@ -56,7 +62,7 @@
         android:id="@+id/outsideText"
         android:textAppearance="?android:textAppearanceMedium"
         android:layout_marginTop="12dp"
-        android:layout_below="@+id/notifyText"
+        android:layout_below="@+id/notifyFieldHour"
         android:layout_alignLeft="@+id/notifyText"/>
 
     <TextView
@@ -116,7 +122,7 @@
         android:text="@string/end_field"
         android:id="@+id/endText"
         android:textAppearance="?android:textAppearanceMedium"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:layout_marginTop="10dp"
         android:layout_below="@+id/startText"
         android:layout_alignRight="@+id/outsideText" />
@@ -133,7 +139,7 @@
         android:background="@color/grey"
         android:id="@+id/endFieldHour"
         android:layout_alignBottom="@+id/endText"
-        android:layout_toLeftOf="@+id/notifyFieldHour"/>
+        android:layout_toLeftOf="@+id/colon3"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -143,7 +149,7 @@
         android:id="@+id/colon3"
         android:textAppearance="?android:textAppearanceMedium"
         android:layout_alignTop="@+id/endText"
-        android:layout_alignLeft="@+id/notifyFieldHour"/>
+        android:layout_alignLeft="@+id/colon1"/>
 
     <EditText
         android:textColor="#ffffff"
@@ -160,11 +166,17 @@
         android:layout_toRightOf="@+id/colon3"/>
 
     <ListView
+        android:textColor="#000000"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:id="@+id/weatherList"
+<<<<<<< HEAD
         android:layout_above="@+id/notifyButton"
         android:layout_alignRight="@+id/showWeather" />
+=======
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/endText" />
+>>>>>>> origin
 
     <Button
         android:layout_width="wrap_content"
@@ -182,6 +194,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"/>
 
+<<<<<<< HEAD
     <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -199,5 +212,7 @@
         android:layout_alignBottom="@+id/endFieldMinutes"
         android:layout_alignRight="@+id/showWeather"
         android:checked="false" />
+=======
+>>>>>>> origin
 
 </RelativeLayout>

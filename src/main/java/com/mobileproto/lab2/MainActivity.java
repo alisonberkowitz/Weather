@@ -153,58 +153,64 @@ public class MainActivity extends Activity {
                 notification();
             }
         });
+/*
 
-//        save.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Integer notifyHourTime = Integer.parseInt(notifyHour.getText().toString());
-//                Integer notifyMinutesTime = Integer.parseInt(notifyMinutes.getText().toString());
-//                Integer startHourTime = Integer.parseInt(startHour.getText().toString());
-//                Integer startMinutesTime = Integer.parseInt(startMinutes.getText().toString());
-//                Integer endHourTime = Integer.parseInt(endHour.getText().toString());
-//                Integer endMinutesTime = Integer.parseInt(endMinutes.getText().toString());
-//                if (notifyHourTime != null && startHourTime != null && endHourTime != null){
-//                    /*try{
-//                        FileOutputStream fos = openFileOutput(fileName, Context.MODE_PRIVATE);
-//                        fos.write(noteText.getBytes());
-//                        fos.close();
-//                        title.setText("");
-//                        note.setText("");
-//                        aa.insert(fileName,0);
-//                        aa.notifyDataSetChanged();*/
-//
-//                        // Gets the data repository in write mode
-//                        SQLiteDatabase db = mDbHelper.getWritableDatabase();
-//
-//// Create a new map of values, where column names are the keys
-//                        ContentValues values = new ContentValues();
-//                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_NOTIFY_HOUR, notifyHourTime);
-//                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_NOTIFY_MINUTES, notifyMinutesTime);
-//                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_START_HOUR, startHourTime);
-//                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_START_MINUTES, startMinutesTime);
-//                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_END_HOUR, endHourTime);
-//                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_END_MINUTES, endMinutesTime);
-//
-//// Insert the new row, returning the primary key value of the new row
-//                        long newRowId;
-//                        newRowId = db.insert(
-//                                NotesDbHelper.FeedEntry.TABLE_NAME,
-//                                null,
-//                                values);
-//
-//                    //aa.insert(fileName,0);
-//                    //aa.notifyDataSetChanged();
-//
-///*                    }catch (IOException e){
-//                        Log.e("IOException", e.getMessage());*/
-//
-//                }
-//            }
-//        });
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Integer notifyHourTime = Integer.parseInt(notifyHour.getText().toString());
+                Integer notifyMinutesTime = Integer.parseInt(notifyMinutes.getText().toString());
+                Integer startHourTime = Integer.parseInt(startHour.getText().toString());
+                Integer startMinutesTime = Integer.parseInt(startMinutes.getText().toString());
+                Integer endHourTime = Integer.parseInt(endHour.getText().toString());
+                Integer endMinutesTime = Integer.parseInt(endMinutes.getText().toString());
+                if (notifyHourTime != null && startHourTime != null && endHourTime != null){
+                    */
+/*try{
+                        FileOutputStream fos = openFileOutput(fileName, Context.MODE_PRIVATE);
+                        fos.write(noteText.getBytes());
+                        fos.close();
+                        title.setText("");
+                        note.setText("");
+                        aa.insert(fileName,0);
+                        aa.notifyDataSetChanged();*//*
 
 
+                        // Gets the data repository in write mode
+                        SQLiteDatabase db = mDbHelper.getWritableDatabase();
 
-        //save.setFocusable(false);
+// Create a new map of values, where column names are the keys
+                        ContentValues values = new ContentValues();
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_NOTIFY_HOUR, notifyHourTime);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_NOTIFY_MINUTES, notifyMinutesTime);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_START_HOUR, startHourTime);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_START_MINUTES, startMinutesTime);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_END_HOUR, endHourTime);
+                        values.put(NotesDbHelper.FeedEntry.COLUMN_NAME_END_MINUTES, endMinutesTime);
+
+// Insert the new row, returning the primary key value of the new row
+                        long newRowId;
+                        newRowId = db.insert(
+                                NotesDbHelper.FeedEntry.TABLE_NAME,
+                                null,
+                                values);
+
+                    //aa.insert(fileName,0);
+                    //aa.notifyDataSetChanged();
+
+*/
+/*                    }catch (IOException e){
+                        Log.e("IOException", e.getMessage());*//*
+
+
+                }
+            }
+        });
+
+
+
+        save.setFocusable(false);
+*/
 
 /*        notes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
